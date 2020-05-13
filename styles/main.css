@@ -1,46 +1,135 @@
-/**
- * index.scss
- * - Add any styles you want here!
- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
 
- body {
-	background-image: url('http://vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
-	background-repeat: no-repat;
-	background-size: auto 100vh; 
-	font-family: Arial;
-	height: 100vh;
-}
+  html { 
+	background: rgb(0,0,0, 0.92) url('../assets/img/home/background-mobile.png') repeat-y fixed; 
+	background-size: auto auto;
+  }
 
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-.menu {
+  body {
+	font-size: 12px;
+	color: whitesmoke;
+  }
+  
+  header {
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+  
+  .menu {
 	background-color: white;
-}
-.menu a {
-	color: stelblue;
-}
-
-.menu ul {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+  }
+  
+  .menu ul {
 	display: flex;
 	justify-content: space-around;
-}
-
-.menu li {
-	list-style: none; 
-}
-
-.site-subtitle,
-.site-title {
-		color: whitesmoke;
-		text-align: center;
-}
-
-.site-subtitle {
+  }
+  
+  .menu li {
+	list-style: none;
+  }
+  
+  .menu a {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+  }
+  
+  .site-title {
+	color: whitesmoke;
+	text-align: center;
+  }
+  
+  .site-subtitle {
+	color: silver;
 	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 2em;
+  }
+  
+  .img-skills {
+	height: 180px;
+	width: 180px;
+	color: whitesmoke;
+  }
+  
+
+h2{
+	padding: 40px 40px;
 }
+
+.skills{
+	padding: 40px;
+	
+}
+
+figcaption {
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.img-skills {
+  height: 180px;
+  width: 180px;
+  color: whitesmoke;
+  margin: 20px;
+}
+
+  @media (min-width: 600px) {
+	
+	html { 
+		background: rgb(0,0,0,0.92)url('../assets/img/home/background.png') no-repeat center center fixed; 
+		background-size: auto 119vh;
+	  }
+	
+	body {
+	  font-size: 22px;
+	  color: whitesmoke;
+	  }
+
+	  header {
+		height: 50vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	  }
+
+	  h2{
+		  padding: 40px 40px;
+	  }
+
+	  .skills{
+		  display: flex;
+		  padding: 40px 40px;
+		  justify-content: center;
+	  }
+
+	  figcaption {
+		  /*! justify-content: center; */
+		  padding: 40px;
+		  /*! margin: 5px; */
+		  display: flex;
+		  justify-content: center;
+	  }
+
+	  .img-skills {
+		height: 180px;
+		width: 180px;
+		color: whitesmoke;
+		margin: 20px;
+	  }
+  }
